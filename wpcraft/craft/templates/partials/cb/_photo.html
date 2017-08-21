@@ -1,0 +1,11 @@
+<div class="panel panel-{{block.id}} {{block.panelWidth}}">
+
+	<div class="photo photo-{{block.photoAlignment}}">
+	
+		{% for image in block.photo %}
+			<img src="{{image.url}}" alt="{{image.title}}">
+		{% endfor %}	
+			
+	</div>
+	
+</div>

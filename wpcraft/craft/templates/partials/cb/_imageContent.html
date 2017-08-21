@@ -1,0 +1,25 @@
+<div class="panel panel-{{block.id}} content-image flex-{{block.imagePosition}} {{block.panelWidth}}">
+
+	<div class="content {{block.textAlignment}}">
+	
+		{% if block.heading | length %}
+			<{{block.headingType}} class="heading">{{block.heading}}</{{block.headingType}}>
+		{% endif %}
+		
+		{{block.body}}
+		
+		{% if block.button.url | length %}
+			<a class="button" href="{{block.button.url}}" target="{{block.button.target}}">{{block.button.text}}</a>
+		{% endif %}
+		
+	</div>
+	
+	<div class="image">
+	
+		{% for image in block.photo %}
+			<img src="{{image.url}}" alt="{{image.title}}">
+		{% endfor %}	
+			
+	</div>
+	
+</div>

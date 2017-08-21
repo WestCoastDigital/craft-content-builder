@@ -1,0 +1,424 @@
+[
+    {
+        "name": "Background Image",
+        "handle": "backgroundImage",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Assets",
+        "settings": {
+            "useSingleFolder": "",
+            "sources": "*",
+            "defaultUploadLocationSource": 1,
+            "defaultUploadLocationSubpath": "",
+            "singleUploadLocationSource": 1,
+            "singleUploadLocationSubpath": "",
+            "restrictFiles": 1,
+            "allowedKinds": [
+                "image"
+            ],
+            "limit": 1,
+            "viewMode": "large",
+            "selectionLabel": "Add an image"
+        }
+    },
+    {
+        "name": "Button",
+        "handle": "button",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "FruitLinkIt",
+        "settings": {
+            "types": [
+                "email",
+                "tel",
+                "custom",
+                "entry",
+                "asset"
+            ],
+            "defaultText": "Read more",
+            "allowCustomText": 1,
+            "allowTarget": 1,
+            "entrySources": "*",
+            "entrySelectionLabel": "Select an entry",
+            "assetSources": "*",
+            "assetSelectionLabel": "Select an asset"
+        }
+    },
+    {
+        "name": "Code",
+        "handle": "code",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "SimpleText",
+        "settings": {
+            "initialRows": 10
+        }
+    },
+    {
+        "name": "Heading",
+        "handle": "heading",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "PlainText",
+        "settings": {
+            "placeholder": "",
+            "maxLength": "",
+            "multiline": "",
+            "initialRows": 4
+        }
+    },
+    {
+        "name": "Large Text",
+        "handle": "largeText",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "SimpleText",
+        "settings": {
+            "initialRows": 4
+        }
+    },
+    {
+        "name": "Photo",
+        "handle": "photo",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Assets",
+        "settings": {
+            "useSingleFolder": "",
+            "sources": "*",
+            "defaultUploadLocationSource": 1,
+            "defaultUploadLocationSubpath": "",
+            "singleUploadLocationSource": 1,
+            "singleUploadLocationSubpath": "",
+            "restrictFiles": 1,
+            "allowedKinds": [
+                "image"
+            ],
+            "limit": 1,
+            "viewMode": "large",
+            "selectionLabel": "Add an image"
+        }
+    },
+    {
+        "name": "Quote",
+        "handle": "quote",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "SimpleText",
+        "settings": {
+            "initialRows": 4
+        }
+    },
+    {
+        "name": "Simple Text",
+        "handle": "simpleText",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "RichText",
+        "settings": {
+            "configFile": "Simple.json",
+            "availableAssetSources": "",
+            "availableTransforms": "",
+            "cleanupHtml": 1,
+            "purifyHtml": 1,
+            "purifierConfig": "",
+            "columnType": "text"
+        }
+    },
+    {
+        "name": "Content Builder",
+        "handle": "contentBuilder",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Neo",
+        "settings": {
+            "maxBlocks": null
+        }
+    },
+    {
+        "name": "Background Colour",
+        "handle": "backgroundColour",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Color",
+        "settings": null
+    },
+    {
+        "name": "Boxed Photo Alignment",
+        "handle": "photoAlignment",
+        "instructions": "If panel is full width, then the image will be full width.",
+        "required": false,
+        "translatable": 0,
+        "type": "PositionSelect",
+        "settings": {
+            "options": {
+                "left": true,
+                "center": true,
+                "right": true
+            }
+        }
+    },
+    {
+        "name": "Code Type",
+        "handle": "codeType",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "Markup",
+                    "value": "markup",
+                    "default": 1
+                },
+                {
+                    "label": "PHP",
+                    "value": "php",
+                    "default": ""
+                },
+                {
+                    "label": "CSS",
+                    "value": "css",
+                    "default": ""
+                },
+                {
+                    "label": "Twig",
+                    "value": "twig",
+                    "default": ""
+                },
+                {
+                    "label": "JavaScript",
+                    "value": "javascript",
+                    "default": ""
+                },
+                {
+                    "label": "Sass",
+                    "value": "scss",
+                    "default": ""
+                }
+            ]
+        }
+    },
+    {
+        "name": "Font Size",
+        "handle": "fontSize",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "110%",
+                    "value": 110,
+                    "default": 1
+                },
+                {
+                    "label": "125%",
+                    "value": 125,
+                    "default": ""
+                },
+                {
+                    "label": "150%",
+                    "value": 150,
+                    "default": ""
+                },
+                {
+                    "label": "200%",
+                    "value": 200,
+                    "default": ""
+                }
+            ]
+        }
+    },
+    {
+        "name": "Heading Type",
+        "handle": "headingType",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "H1",
+                    "value": "h1",
+                    "default": ""
+                },
+                {
+                    "label": "H2",
+                    "value": "h2",
+                    "default": 1
+                },
+                {
+                    "label": "H3",
+                    "value": "h3",
+                    "default": ""
+                },
+                {
+                    "label": "H4",
+                    "value": "h4",
+                    "default": ""
+                },
+                {
+                    "label": "H5",
+                    "value": "h5",
+                    "default": ""
+                },
+                {
+                    "label": "H6",
+                    "value": "h6",
+                    "default": ""
+                }
+            ]
+        }
+    },
+    {
+        "name": "Image Position",
+        "handle": "imagePosition",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "PositionSelect",
+        "settings": {
+            "options": {
+                "left": true,
+                "right": true
+            }
+        }
+    },
+    {
+        "name": "Overlay Colour",
+        "handle": "overlayColour",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Hue",
+        "settings": {
+            "defaultColor": "#000000"
+        }
+    },
+    {
+        "name": "Overlay Opacity",
+        "handle": "overlayOpacity",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "10%",
+                    "value": 0.1,
+                    "default": ""
+                },
+                {
+                    "label": "20%",
+                    "value": 0.2,
+                    "default": ""
+                },
+                {
+                    "label": "25%",
+                    "value": 0.25,
+                    "default": 1
+                },
+                {
+                    "label": "30%",
+                    "value": 0.3,
+                    "default": ""
+                },
+                {
+                    "label": "40%",
+                    "value": 0.4,
+                    "default": ""
+                },
+                {
+                    "label": "50%",
+                    "value": 0.5,
+                    "default": ""
+                },
+                {
+                    "label": "75%",
+                    "value": 0.75,
+                    "default": ""
+                },
+                {
+                    "label": "80%",
+                    "value": 0.8,
+                    "default": ""
+                }
+            ]
+        }
+    },
+    {
+        "name": "Panel Width",
+        "handle": "panelWidth",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "Boxed",
+                    "value": "boxed",
+                    "default": 1
+                },
+                {
+                    "label": "Full Width",
+                    "value": "fullWidth",
+                    "default": ""
+                }
+            ]
+        }
+    },
+    {
+        "name": "Parallax",
+        "handle": "parallax",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Lightswitch",
+        "settings": {
+            "default": ""
+        }
+    },
+    {
+        "name": "Text Alignment",
+        "handle": "textAlignment",
+        "instructions": "",
+        "required": false,
+        "translatable": 0,
+        "type": "Dropdown",
+        "settings": {
+            "options": [
+                {
+                    "label": "Left",
+                    "value": "left",
+                    "default": 1
+                },
+                {
+                    "label": "Center",
+                    "value": "center",
+                    "default": ""
+                },
+                {
+                    "label": "Right",
+                    "value": "right",
+                    "default": ""
+                }
+            ]
+        }
+    }
+]

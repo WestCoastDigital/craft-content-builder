@@ -1,0 +1,48 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+    <main>
+    
+		<div class="container">
+		
+			{% for block in entry.contentBuilder.level(1) %}
+			
+				{% switch block.type.handle %}
+				
+					{% case 'heading' %}
+					{% include 'partials/cb/_heading' %}
+				
+					{% case 'button' %}
+					{% include 'partials/cb/_button' %}
+				
+					{% case 'largeText' %}
+					{% include 'partials/cb/_largeText' %}
+				
+					{% case 'simpleText' %}
+					{% include 'partials/cb/_simpleText' %}
+				
+					{% case 'imageContent' %}
+					{% include 'partials/cb/_imageContent' %}
+				
+					{% case 'photo' %}
+					{% include 'partials/cb/_photo' %}
+				
+					{% case 'quote' %}
+					{% include 'partials/cb/_quote' %}
+				
+					{% case 'code' %}
+					{% include 'partials/cb/_code' %}
+				
+					{% case 'hero' %}
+					{% include 'partials/cb/_hero' %}
+				
+				{% endswitch %}
+			
+			{% endfor %}
+		
+		</div>
+    
+	</main>
+
+{% endblock %}

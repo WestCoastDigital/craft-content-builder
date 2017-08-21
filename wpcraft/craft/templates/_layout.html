@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% includeCssFile "/assets/css/project.css" %}
+	{% includeCssFile "/assets/css/content-builder.css" %}
+</head>
+
+<body>
+
+	{% block content %}{% endblock %}
+	
+	{% includeJsFile "https://code.jquery.com/jquery-3.2.1.min.js" %}
+	{% includeJsFile "/assets/js/project.js" %}
+	
+</body>
+</html>

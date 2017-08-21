@@ -1,0 +1,38 @@
+{% set heroCSS %}
+	.panel-{{block.id}} {
+		{% if block.backgroundImage | length %}
+			{% for image in block.backgroundImage %}
+			background-image: url('{{image.url}}');
+			{% endfor %}
+		{% else %}
+			background-color: {{block.backgroundColour}};
+		{% endif %}
+	}
+	{% if block.backgroundImage | length %}
+		.panel-{{block.id}}:before {
+			content: '';
+			background-color: rgba({{block.overlayColour.getRgb()}},{{block.overlayOpacity}});
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+	{% endif %}
+{% endset %}
+
+{% includeCss heroCSS %}
+
+{% set parallax = '' %}
+{% if block.parallax == 1 %}
+	{% set parallax = 'parallax' %}
+{% endif %}
+<div class="panel panel-{{block.id}} hero {{block.panelWidth}} {{parallax}}">
+
+	<div class="content {{block.textAlignment}}">
+		<{{block.headingType}} class="heading">{{block.heading}}</{{block.headingType}}>
+		{{block.body}}
+		<a class="button" href="{{block.button.url}}" target="{{block.button.target}}">{{block.button.text}}</a>
+	</div>
+
+</div>
